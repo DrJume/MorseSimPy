@@ -67,6 +67,11 @@ var webSocketsServerPort = [YOUR PORT]
 node index.js
 ```
 
+## III. Have fun
+You can use LearnMorsePro.png to learn the morse alphabet easier!
+Please write an GitHub issue if something does not work out,
+I will try responding quickly.
+
 ## Links
 http://www.python-exemplarisch.ch/drucken.php?inhalt_mitte=raspi/de/sound.inc.php
 https://github.com/Lawouach/WebSocket-for-Python
