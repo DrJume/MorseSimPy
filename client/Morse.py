@@ -33,7 +33,7 @@ class MorseClient(WebSocketClient):
         print(str(morseBuffer))
 
 try:
-    ws = MorseClient('ws://192.168.178.25:8080/')
+    ws = MorseClient('ws://[SERVER-IP]:[PORT]/')
     ws.connect()
 
     sendBuffer = []

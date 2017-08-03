@@ -27,6 +27,8 @@ You can define your own in the Morse.py file.
 See "pinDit" for the button activating a short tone and "pinDah" for a long tone.
 And the other pin of the button connects to **GROUND**
 
+---
+
 The server and the client should be on seperate devices. 
 The server will be the connection for multiple clients.
 
@@ -41,7 +43,26 @@ Switch to the server directory and run:
 npm install
 ```
 
-### 3. Start the WebSocket server
+### 3. Find out the IP from the server device
+Update the IP found in the *Morse.js* client script.
+
+Change
+```python
+ws = MorseClient('ws://[SERVER-IP]:[PORT]/')
+```
+into (EXAMPLE!)
+```python
+ws = MorseClient('ws://192.168.178.25:8080/')
+```
+
+The standard port setting is 8080.
+If you wish to change it, please do so in the *index.js*
+under:
+```javascript
+var webSocketsServerPort = [YOUR PORT]
+```
+
+### 4. Start the WebSocket server
 ```
 node index.js
 ```
